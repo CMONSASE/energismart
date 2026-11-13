@@ -3,69 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EnergiSmart - Nosotros</title>
-  
+  <title>Nosotros - EnergiSmart</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Hoja de estilos propia -->
   <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
+<body class="bg-light d-flex flex-column min-vh-100">
 
-  <header id="main-header" class="p-3 mb-4 text-white">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1>EnergiSmart</h1>
-      <nav class="menu-navegacion">
+  <!-- Encabezado y Menú de Navegación -->
+  <header class="bg-dark text-white py-3 shadow-sm">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <h1 class="h3 mb-0 text-success fw-bold">EnergiSmart</h1>
+      <nav class="menu-navegacion mt-2 mt-md-0">
         <a href="index.html">Inicio</a>
         <a href="catalogo.html">Catálogo</a>
-        <a href="nosotros.html">Nosotros</a>
+        <a href="nosotros.html" class="active">Nosotros</a>
         <a href="contacto.html">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h2 class="mb-4">Nuestro Equipo de Trabajo</h2>
-    <p class="lead mb-5">Somos un equipo enfocado en desarrollar soluciones web accesibles y eficientes para concientizar sobre el consumo responsable de energía.</p>
+  <!-- Contenido Principal -->
+  <main class="container my-5">
     
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 p-4 text-center shadow-sm border-0">
-          <div class="card-body">
-            <h3 class="h4 card-title text-primary">Integrante 1</h3>
-            <p class="badge bg-secondary mb-3">Líder Frontend & SCSS</p>
-            <p class="card-text text-muted">Diseño responsive, estructuración de archivos Sass (_variables.scss), layout con CSS Grid y Flexbox.</p>
+    <!-- Historia y Propósito -->
+    <section class="text-center mb-5">
+      <h2 class="display-5 fw-bold text-success">Sobre EnergiSmart</h2>
+      <p class="lead text-secondary mx-auto" style="max-width: 750px;">
+        Nacimos con el propósito de ayudar a los hogares colombianos a enfrentar el incremento en las tarifas eléctricas durante el fenómeno de El Niño 2026, facilitando el acceso a tecnología de bajo consumo con retorno de inversión comprobable.
+      </p>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section class="row g-4 mb-5">
+      <div class="col-12 col-md-6">
+        <div class="card tarjeta-producto h-100 p-4 border-0 shadow-sm">
+          <h3 class="h4 fw-bold text-success mb-3">🌱 Nuestra Misión</h3>
+          <p class="text-secondary mb-0">
+            Proveer electrodomésticos y sistemas de iluminación de alta eficiencia energética, brindando herramientas transparentes para que cada familia calcule su ahorro mensual real y reduzca su huella ambiental.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card tarjeta-producto h-100 p-4 border-0 shadow-sm">
+          <h3 class="h4 fw-bold text-success mb-3">🚀 Nuestra Visión</h3>
+          <p class="text-secondary mb-0">
+            Ser la plataforma referente en transición energética residencial, demostrando que la sostenibilidad económica y el cuidado del medio ambiente van de la mano en cada hogar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Autor / Desarrollador del Proyecto -->
+    <section class="text-center">
+      <h3 class="h3 fw-bold text-dark mb-4">Autoría del Proyecto</h3>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-5">
+          <div class="card tarjeta-producto p-4 border-0 shadow-sm">
+            <div class="display-4 mb-2">👨‍💻</div>
+            <h4 class="h5 fw-bold text-success mb-1">Cristian Monsalve</h4>
+            <p class="small text-muted fw-semibold mb-2">Desarrollador Frontend & Arquitectura UI</p>
+            <p class="small text-secondary mb-0">
+              Responsable del diseño semántico en HTML5, maquetación responsiva con Bootstrap 5, arquitectura modular en Sass y programación de la lógica de amortización energética en JavaScript.
+            </p>
           </div>
         </div>
       </div>
-      
-      <div class="col-md-4">
-        <div class="card h-100 p-4 text-center shadow-sm border-0">
-          <div class="card-body">
-            <h3 class="h4 card-title text-primary">Integrante 2</h3>
-            <p class="badge bg-secondary mb-3">Desarrollador JavaScript</p>
-            <p class="card-text text-muted">Lógica de tienda (tienda.js), renderizado dinámico del DOM, filtros por categoría y buscador dinámico con evento input.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-4">
-        <div class="card h-100 p-4 text-center shadow-sm border-0">
-          <div class="card-body">
-            <h3 class="h4 card-title text-primary">Integrante 3</h3>
-            <p class="badge bg-secondary mb-3">QA & Documentación</p>
-            <p class="card-text text-muted">Validación en W3C (HTML y CSS), pruebas de consola, configuración de Git, tag 'ea2' y preparación del PDF.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
+
   </main>
 
-  <footer class="text-center py-4 mt-5 border-top">
-    <p class="text-muted mb-0">© 2026 EnergiSmart - Soluciones de Eficiencia Energética</p>
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 EnergiSmart - Desarrollado por Cristian Monsalve</p>
+    </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.bundle.min.js"></script>
 </body>
 </html>
