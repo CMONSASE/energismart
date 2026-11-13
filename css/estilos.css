@@ -1,0 +1,47 @@
+/* HOJA DE ESTILOS CSS COMPILADA DESDE SASS */
+
+body {
+  background-color: #f4f7f2;
+  color: #1f2933;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 5. SELECTOR DE HIJO DIRECTO (>) + PSEUDOCLASES (:hover, :focus) */
+.menu-navegacion {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .menu-navegacion {
+    flex-direction: column;
+  }
+}
+
+.menu-navegacion > a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-navegacion > a:hover {
+  background-color: #f9a825;
+  color: #1f2933;
+  transform: translateY(-2px);
+}
+
+.menu-navegacion > a:focus {
+  outline: 2px solid #f9a825;
+}
+
+.tarjeta-producto {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  border: 1px solid #ddebdd;
+  background-color: #ffffff;
+  padding: 16px;
+}
